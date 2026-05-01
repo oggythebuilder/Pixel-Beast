@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://c8dhotdn2vnst"]
+
+[ext_resource type="Script" uid="uid://bpc5u313j066a" path="res://wave_spawner.gd" id="1_ga8op"]
+[ext_resource type="PackedScene" uid="uid://cctjewlxl0jnt" path="res://kida_2.tscn" id="2_ga8op"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tg36j"]
+size = Vector2(3181, 554)
+
+[node name="5" type="Area2D" unique_id=203640741]
+script = ExtResource("1_ga8op")
+kida_scene = ExtResource("2_ga8op")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1802823344]
+visibility_layer = 16
+position = Vector2(-1, -26)
+shape = SubResource("RectangleShape2D_tg36j")
+
+[node name="SpawnTimer" type="Timer" parent="CollisionShape2D" unique_id=245572955]
+wait_time = 2.0
+
+[node name="SpawnPoint" type="Marker2D" parent="." unique_id=1639159018]
+position = Vector2(-45, -85)
+
+[node name="SpawnPoint" type="Marker2D" parent="SpawnPoint" unique_id=902867394]
+position = Vector2(1554, -160)
+gizmo_extents = 283.8
+
+[node name="SpawnPoint2" type="Marker2D" parent="SpawnPoint" unique_id=1279028285]
+position = Vector2(-1513, -126)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="CollisionShape2D/SpawnTimer" to="." method="_on_spawn_timer_timeout"]

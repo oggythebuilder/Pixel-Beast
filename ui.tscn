@@ -1,0 +1,111 @@
+[gd_scene format=3 uid="uid://djf7keuxeyyoh"]
+
+[ext_resource type="Script" uid="uid://tm3tng57twac" path="res://ui.gd" id="1_27fn8"]
+[ext_resource type="Texture2D" uid="uid://durlcqyq14ill" path="res://Gemini_Generated_Image_7hw44a7hw44a7hw4.png" id="2_n5ude"]
+[ext_resource type="Texture2D" uid="uid://bcmxd20nqrk06" path="res://asstes/Screenshot 2026-04-30 at 5.02.50 PM (1).png" id="3_ibotj"]
+[ext_resource type="Texture2D" uid="uid://1yp051h4nixe" path="res://asstes/Screenshot 2026-04-30 at 5.02.40 PM (1).png" id="4_n5ude"]
+[ext_resource type="Texture2D" uid="uid://1kyqjlkde33w" path="res://asstes/freeknight/png/Pixel You Died SVG, PNG, JPG, PDF Files _ Craftpi.png" id="5_n5ude"]
+[ext_resource type="Texture2D" uid="uid://xxq33pcqftts" path="res://asstes/Screenshot 2026-04-30 at 5.02.26 PM (1).png" id="5_y4yjw"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_y4yjw"]
+texture = ExtResource("2_n5ude")
+
+[sub_resource type="FontVariation" id="FontVariation_xb563"]
+
+[sub_resource type="Theme" id="Theme_xb563"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m6e0p"]
+bg_color = Color(0.11856563, 0.08167394, 0.08167394, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_m6e0p"]
+
+[sub_resource type="GDScript" id="GDScript_m6e0p"]
+
+[node name="UI" type="Control" unique_id=658887226]
+layout_mode = 3
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 826.0
+offset_top = 424.0
+offset_right = -826.0
+offset_bottom = -424.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_27fn8")
+
+[node name="Panel" type="Panel" parent="." unique_id=549404980]
+modulate = Color(0.7911056, 0.7911056, 0.7911056, 1)
+layout_mode = 0
+offset_left = -824.0
+offset_top = -423.0
+offset_right = 829.0
+offset_bottom = 424.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_y4yjw")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1701890583]
+layout_mode = 0
+offset_left = 290.0
+offset_top = 2.0
+offset_right = 868.0
+offset_bottom = 402.0
+scale = Vector2(0.9574049, 0.8)
+theme_override_constants/separation = 12
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=472572147]
+z_index = 1
+clip_contents = true
+custom_minimum_size = Vector2(5, 5)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.036416017, 0.023643246, 0.0017028231, 1)
+theme_override_fonts/font = SubResource("FontVariation_xb563")
+theme_override_font_sizes/font_size = 90
+icon = ExtResource("3_ibotj")
+flat = true
+
+[node name="Button3" type="Button" parent="VBoxContainer" unique_id=1587564919]
+z_index = 1
+custom_minimum_size = Vector2(9, 0)
+layout_mode = 2
+theme = SubResource("Theme_xb563")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0.05490196)
+theme_override_constants/outline_size = 0
+theme_override_constants/h_separation = 9
+theme_override_constants/icon_max_width = -9
+theme_override_constants/align_to_largest_stylebox = -18
+theme_override_fonts/font = SubResource("FontVariation_xb563")
+theme_override_font_sizes/font_size = 90
+icon = ExtResource("4_n5ude")
+flat = true
+
+[node name="Button" type="Button" parent="." unique_id=1011673437]
+layout_mode = 0
+offset_left = 603.0
+offset_top = 166.99997
+offset_right = 1339.0
+offset_bottom = 903.0
+scale = Vector2(0.40000242, 0.44)
+theme_override_colors/font_color = Color(0.38860604, 0.38860604, 0, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_m6e0p")
+icon = ExtResource("5_n5ude")
+flat = true
+
+[node name="Button2" type="Button" parent="." unique_id=186751076]
+z_index = 1
+layout_mode = 0
+offset_left = 151.0
+offset_top = -211.0
+offset_right = 931.0
+offset_bottom = 19.0
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = SubResource("FontVariation_xb563")
+theme_override_font_sizes/font_size = 88
+theme_override_styles/hover = SubResource("StyleBoxTexture_m6e0p")
+action_mode = 0
+button_mask = 5
+icon = ExtResource("5_y4yjw")
+flat = true
+script = SubResource("GDScript_m6e0p")
+
+[connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

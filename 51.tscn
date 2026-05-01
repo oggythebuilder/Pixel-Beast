@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://b2xr3tu32jib5"]
+
+[ext_resource type="Script" uid="uid://l0yst8rqix30" path="res://51.gd" id="1_luj4s"]
+[ext_resource type="PackedScene" uid="uid://dklxvs7rwiraf" path="res://kida_3.tscn" id="2_rlkkp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tg36j"]
+size = Vector2(3181, 554)
+
+[node name="51" type="Area2D" unique_id=203640741]
+script = ExtResource("1_luj4s")
+kida_scene = ExtResource("2_rlkkp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1802823344]
+visibility_layer = 16
+position = Vector2(-1, -26)
+shape = SubResource("RectangleShape2D_tg36j")
+
+[node name="SpawnTimer" type="Timer" parent="CollisionShape2D" unique_id=245572955]
+wait_time = 1.5
+
+[node name="SpawnPoint" type="Marker2D" parent="." unique_id=1639159018]
+position = Vector2(-45, -85)
+
+[node name="SpawnPoint2" type="Marker2D" parent="." unique_id=902867394]
+position = Vector2(1509, -245)
+gizmo_extents = 283.8
+
+[node name="SpawnPoint3" type="Marker2D" parent="." unique_id=1279028285]
+position = Vector2(-1558, -211)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="CollisionShape2D/SpawnTimer" to="." method="_on_spawn_timer_timeout"]
