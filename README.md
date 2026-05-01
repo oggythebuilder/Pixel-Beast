@@ -16,6 +16,21 @@ The project is currently configured for a web release via platforms like itch.io
 * **2D Environment:** Built entirely as a 2D experience within the Godot Engine, focusing on clear visuals and precise physics.
 * **Web-Ready:** Designed and optimized to be compiled and played directly in modern web browsers.
 
+## environment
+
+## Hero
+
+## enemy
+
+## Controls
+
+| Action | Key Binding |
+| :--- | :--- |
+| **Move Left / Right** | `A` / `D` or `Arrow Keys` |
+| **Jump** | `Space` / `W` |
+| **attack / Interact** | `Enter` / `v`|
+| **Pause Menu** | `Escape` |
+
 ## Prerequisites
 
 To run or edit the project from the source code, you will need:
@@ -38,14 +53,7 @@ To run or edit the project from the source code, you will need:
 3. **Run the Game:**
    * Press `F5` (or the Play button) in the Godot editor to start the main scene.
 
-## Controls
 
-| Action | Key Binding |
-| :--- | :--- |
-| **Move Left / Right** | `A` / `D` or `Arrow Keys` |
-| **Jump** | `Space` / `W` |
-| **attack / Interact** | `Enter` / `v`|
-| **Pause Menu** | `Escape` |
 
 ## Project Structure
 
