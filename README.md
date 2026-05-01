@@ -1,12 +1,13 @@
 # Pixel Beast
 
-**Pixel Beast** is a 2D game developed in the Godot Engine. The core gameplay revolves around taking control of powerful mythological beasts from different cultures, utilizing their unique abilities to navigate levels and overcome challenges. 
+**Pixel Beast** is a 2D game developed in the Godot Engine. The core gameplay revolves around taking control of powerful mythological beasts from different cultures, utilizing their unique abilities to navigate levels and overcome challenges.
 
+The project is currently configured for a web release via platforms like itch.io.
 
 <img width="1600" height="822" alt="image" src="https://github.com/user-attachments/assets/6a811849-eb92-4642-8547-6145137535da" />
 
 
-The project is currently configured for a web release via platforms like itch.io.
+
 
 ---
 
