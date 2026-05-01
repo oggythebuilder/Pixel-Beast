@@ -1,3 +1,4 @@
+
 # Pixel Beast
 
 **Pixel Beast** is a 2D game developed in the Godot Engine. The core gameplay revolves around taking control of powerful mythological beasts from different cultures, utilizing their unique abilities to navigate levels and overcome challenges.
@@ -30,26 +31,28 @@ The project is currently configured for a web release via platforms like itch.io
 
 
 ## Hero
-<img width="1080" height="589" alt="Gemini_Generated_Image_byfj4tbyfj4tbyfj (1) (1)" src="https://github.com/user-attachments/assets/073314cd-bbfe-49e0-947c-037c0805b246" />
+1.
+<img width="458" height="369" alt="Screenshot 2026-04-30 at 8 03 27 PM" src="https://github.com/user-attachments/assets/bfd23349-bcd7-4e77-ab39-2a904bd47e2a" />
+
+2. upcoming soon <img width="1080" height="589" alt="Gemini_Generated_Image_byfj4tbyfj4tbyfj (1) (1)" src="https://github.com/user-attachments/assets/073314cd-bbfe-49e0-947c-037c0805b246" />
 
 ## environment
-1
+1.<img width="327" height="185" alt="Screenshot 2026-04-19 at 11 41 48 PM" src="https://github.com/user-attachments/assets/3bda5bdb-20fc-4f9b-a42c-bc2303a15718" />
+2.<img width="325" height="183" alt="Screenshot 2026-04-19 at 11 42 01 PM" src="https://github.com/user-attachments/assets/2bcbc3a6-6537-4e15-855a-d02c93de8183" />
+3.<img width="2730" height="1536" alt="1" src="https://github.com/user-attachments/assets/2eb7d122-e6b9-4304-b544-fbcdbb0551a0" />
+4.<img width="736" height="978" alt="_ (1)" src="https://github.com/user-attachments/assets/d2c43e80-bff6-449e-a4ec-98b9c27bd4e2" />
+5.<img width="580" height="872" alt="Computer Game Landscapes Collection by VectorPot on @creativemarket" src="https://github.com/user-attachments/assets/ec77ad76-377c-4fb2-ad4c-56bdae674299" />
 
-<img width="327" height="185" alt="Screenshot 2026-04-19 at 11 41 48 PM" src="https://github.com/user-attachments/assets/3bda5bdb-20fc-4f9b-a42c-bc2303a15718" />
-<img width="325" height="183" alt="Screenshot 2026-04-19 at 11 42 01 PM" src="https://github.com/user-attachments/assets/2bcbc3a6-6537-4e15-855a-d02c93de8183" />
+6.<img width="512" height="1000" alt="_ (5)" src="https://github.com/user-attachments/assets/3ea97134-1dfa-4d39-b35f-dd9a8b109a87" />
 
-<img width="736" height="978" alt="_ (1)" src="https://github.com/user-attachments/assets/d2c43e80-bff6-449e-a4ec-98b9c27bd4e2" />
-<img width="580" height="872" alt="Computer Game Landscapes Collection by VectorPot on @creativemarket" src="https://github.com/user-attachments/assets/ec77ad76-377c-4fb2-ad4c-56bdae674299" />
-<img width="2730" height="1536" alt="1" src="https://github.com/user-attachments/assets/2eb7d122-e6b9-4304-b544-fbcdbb0551a0" />
-<img width="512" height="1000" alt="_ (5)" src="https://github.com/user-attachments/assets/3ea97134-1dfa-4d39-b35f-dd9a8b109a87" />
-<img width="607" height="1080" alt="_ (2)" src="https://github.com/user-attachments/assets/652aab6d-b68d-4344-9815-238be2b12f63" />
 
 
 
 
 ## enemy
-<img width="600" height="2146" alt="WONDERS EX _ game _ 2D Game concept art, 2009 Pixel Art - injae Byun" src="https://github.com/user-attachments/assets/49be80c9-03ca-479f-b170-52bffa40789d" />
-<img width="534" height="468" alt="WhatsApp Image 2026-04-29 at 10 37 21 PM" src="https://github.com/user-attachments/assets/23a86bc7-d917-4a6d-9748-2e98b22d34d4" />
+1. dragonasur
+   <img width="600" height="2146" alt="WONDERS EX _ game _ 2D Game concept art, 2009 Pixel Art - injae Byun" src="https://github.com/user-attachments/assets/49be80c9-03ca-479f-b170-52bffa40789d" />
+2. alphashur <img width="534" height="468" alt="WhatsApp Image 2026-04-29 at 10 37 21 PM" src="https://github.com/user-attachments/assets/23a86bc7-d917-4a6d-9748-2e98b22d34d4" />
 
 
 
