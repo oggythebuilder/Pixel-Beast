@@ -41,8 +41,18 @@
 [ext_resource type="Texture2D" uid="uid://36xaeckaql7a" path="res://asstes/freeknight/png/Attack (8).png" id="38_vie4p"]
 [ext_resource type="Texture2D" uid="uid://ci6saojm8op00" path="res://asstes/freeknight/png/Attack (9).png" id="39_0jj5r"]
 [ext_resource type="Texture2D" uid="uid://b5r8tqydmw3hy" path="res://asstes/freeknight/png/Attack (10).png" id="40_77e46"]
+[ext_resource type="Texture2D" uid="uid://bgk01o3y7qd24" path="res://asstes/freeknight/png/Dead (1).png" id="42_5ef02"]
 [ext_resource type="AudioStream" uid="uid://ls53q48h0owp" path="res://asstes/sound/mixkit-crunchy-road-fast-walking-loop-1274.wav" id="42_ibah8"]
 [ext_resource type="AudioStream" uid="uid://dclds6b2ir7kn" path="res://asstes/sound/ElevenLabs_Rhythmic_footsteps_on_gravel,_outdoor_running.mp3" id="43_3iwfv"]
+[ext_resource type="Texture2D" uid="uid://chjfv1vk33c1u" path="res://asstes/freeknight/png/Dead (2).png" id="43_pfmca"]
+[ext_resource type="Texture2D" uid="uid://cj06e22tofacv" path="res://asstes/freeknight/png/Dead (3).png" id="44_76oay"]
+[ext_resource type="Texture2D" uid="uid://bo6v874egr28h" path="res://asstes/freeknight/png/Dead (4).png" id="45_b4uyv"]
+[ext_resource type="Texture2D" uid="uid://dfrdmtbl8p2qy" path="res://asstes/freeknight/png/Dead (5).png" id="46_tw8ou"]
+[ext_resource type="Texture2D" uid="uid://dtdury1jvij0e" path="res://asstes/freeknight/png/Dead (6).png" id="47_ygbnx"]
+[ext_resource type="Texture2D" uid="uid://jct6ne5p7mkt" path="res://asstes/freeknight/png/Dead (7).png" id="48_v2t6f"]
+[ext_resource type="Texture2D" uid="uid://b6b3gvynagkhb" path="res://asstes/freeknight/png/Dead (8).png" id="49_l3lcn"]
+[ext_resource type="Texture2D" uid="uid://dm8biedrfpggs" path="res://asstes/freeknight/png/Dead (9).png" id="50_xry5e"]
+[ext_resource type="Texture2D" uid="uid://c4fftg7ibiqku" path="res://asstes/freeknight/png/Dead (10).png" id="51_h6w8y"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_cy2ki"]
 animations = [{
@@ -188,6 +198,41 @@ animations = [{
 "loop": false,
 "name": &"attack",
 "speed": 46.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("42_5ef02")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_pfmca")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_76oay")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_b4uyv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_tw8ou")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_ygbnx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_v2t6f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_l3lcn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_xry5e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_h6w8y")
+}],
+"loop": false,
+"name": &"die",
+"speed": 14.0
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_04cqw"]
@@ -205,33 +250,39 @@ script = ExtResource("1_ny14h")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=595682158]
 light_mask = 7
-position = Vector2(-39.999996, 17.500008)
+position = Vector2(-39, 24.000004)
 scale = Vector2(0.36115843, 0.3125884)
 sprite_frames = SubResource("SpriteFrames_cy2ki")
-animation = &"attack"
+animation = &"Idle"
 autoplay = "Idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=386983335]
+visible = false
 position = Vector2(-50, 25)
 shape = SubResource("CircleShape2D_04cqw")
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="." unique_id=928220614]
+visible = false
 position = Vector2(6, 7)
 occluder = SubResource("OccluderPolygon2D_331ug")
 
 [node name="FootstepSound" type="AudioStreamPlayer2D" parent="." unique_id=1386706276]
+visible = false
 z_index = 1
 stream = ExtResource("42_ibah8")
 
 [node name="AttackHitbox" type="Area2D" parent="." unique_id=681690875]
+visible = false
 light_mask = 1022
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AttackHitbox" unique_id=2047094781]
+visible = false
 light_mask = 1022
-position = Vector2(-48, 61)
+position = Vector2(-45, 71)
 shape = SubResource("RectangleShape2D_ibah8")
 
 [node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="." unique_id=2126538990]
+visible = false
 stream = ExtResource("43_3iwfv")
 volume_db = 22.469
 autoplay = true

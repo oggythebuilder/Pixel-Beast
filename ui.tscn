@@ -107,5 +107,8 @@ icon = ExtResource("5_y4yjw")
 flat = true
 script = SubResource("GDScript_m6e0p")
 
+[node name="Timer" type="Timer" parent="Button2" unique_id=275410828]
+wait_time = 0.062
+
 [connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_button_3_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

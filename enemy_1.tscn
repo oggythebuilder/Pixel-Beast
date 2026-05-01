@@ -146,7 +146,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("40_ctw1p")
 }],
-"loop": true,
+"loop": false,
 "name": &"attack",
 "speed": 36.0
 }, {
@@ -375,7 +375,7 @@ visibility_layer = 2
 position = Vector2(12.97643, 0.06467128)
 scale = Vector2(0.7311089, 1.1010754)
 sprite_frames = SubResource("SpriteFrames_7mhki")
-animation = &"idle"
+animation = &"attack"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1849434012]

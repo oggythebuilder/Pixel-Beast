@@ -359,9 +359,8 @@ script = ExtResource("1_lljmf")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1679062106]
 position = Vector2(-10, -1)
 sprite_frames = SubResource("SpriteFrames_suftx")
-animation = &"run"
+animation = &"attack"
 autoplay = "idle"
-frame_progress = 0.16325149
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=896551400]
 position = Vector2(-49, 9)

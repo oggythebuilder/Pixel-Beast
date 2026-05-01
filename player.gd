@@ -13,6 +13,8 @@ const ATTACK_MOVEMENT_LOCK_DURATION = 0.3 # Time movement is disabled during att
 @onready var attack_hitbox: Area2D = $AttackHitbox
 @onready var audio_stream_player_2d_2: AudioStreamPlayer2D = $AudioStreamPlayer2D2
 
+
+
 # Get gravity setting from Project Settings (standard 2D platformer value)
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
@@ -110,16 +112,15 @@ func reset_state():
 	velocity = Vector2.ZERO
 
 
-var health = 25
+var health = 100
 
 func take_damage():
-	health -= 3
-	print("player Health: ", health)
+	health -= 5 # या जो भी अमाउंट आप कम करना चाहते थे
+	print("Player Health: ", health) # आउटपुट में हेल्थ देखने के लिए
 	
 	if health <= 0:
 		die()
 
 func die():
-	# 0.05 second ka wait aur restart (jaisa tumne pehle manga tha)
-	await get_tree().create_timer(0.05).timeout
+	# प्लेयर के मरने पर सीन को रीस्टार्ट करना
 	get_tree().reload_current_scene()
