@@ -24,9 +24,9 @@ The project is currently configured for a web release via platforms like itch.io
 
 | Action | Key Binding |
 | :--- | :--- |
-| **Move Left / Right** | `A` / `D` or `Arrow Keys` |
+| **Move Left / Right** |  `Arrow Keys` |
 | **Jump** | `Space` / `W` |
-| **attack / Interact** | `Enter` / `v`|
+| **attack / Interact** | `Enter` |
 | **Pause Menu** | `Escape` |
 
 
